@@ -36,6 +36,8 @@ All user contact information is fully verified. Email is verified using 4-digit 
 
 ## KOL Collection
 
+Not every KOL will have a "yt" field (only ~450-500 KOLs connected a YouTube account)
+
 ### Shape
 
 ```
