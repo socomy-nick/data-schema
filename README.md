@@ -360,10 +360,51 @@ There is one collection for focuses (i.e. interest groups) and one collection fo
 
 
 
-
-
 ## Instagram Posts Collection
 
+Data related to the instagram posts created by each KOL 
+
+### Shape
+
+```
+{
+	"_id" : <ObjectId>,
+	"kol_id" : <ObjectId>,
+	"ig_media_id" : <string>,
+	"caption" : <string>,
+	"comments_count" : <int>,
+	"like_count" : <int>,
+	"media_type" : <string>,
+	"permalink" : <string>,
+	"published_at" : <Date>,
+	"insights" : {
+		"reach" : <int>,
+		"impressions" : <int>,
+		"saves" : <int>,
+	}
+}
+```
+
+### Example
+
+```
+{
+	"_id" : ObjectId('5def4859c2c9607fcafe16c5'),
+	"kol_id" : ObjectId('5ddd85ca61d6a5c4818bd15b'),
+	"ig_media_id" : '17881516624469089',
+	"caption" : 'Musim hujan gini kalian jaga kesehatan ya.. kalau keluar rumah jgn lupa pake jaket, bawa payung/ jas hujan. 💕 .\n.\n.\n\n#teamhydrant #hydrantpose #ootd #ootdlidya #outfitinspiration #sweaterweather #sweaterhoodie #sweaterstyle #hoodiestyle #clozetteid',
+	"comments_count" : 9,
+	"like_count" : 59,
+	"media_type" : 'IMAGE',
+	"permalink" : 'https://www.instagram.com/p/B54fj7zAaoH/',
+	"published_at" : datetime(2020, 12, 10, 6, 58, 58),
+	"insights" : {
+		"reach" : 353,
+		"impressions" : 406,
+		"saves" : 4,
+	}
+}
+```
 
 
 
@@ -380,7 +421,6 @@ Note, for instagram frames, likes and comments will always have a value of 0 sin
 	"_id" : <ObjectId>,
 	"kol_id" : <ObjectId>,
 	"ig_media_id" : <string>,
-	"ig_business_id" : <string>,
 	"caption" : <string>,
 	"comments_count" : <int>,
 	"like_count" : <int>,
@@ -403,8 +443,8 @@ Note, for instagram frames, likes and comments will always have a value of 0 sin
 ```
 {
 	"_id" : ObjectId('5dcd07e520c79c4bfd4997d7'),
+	"kol_id" : ObjectId('5dcbb26961d6a5c481dc2fe9'),
 	"ig_media_id" : '18115231966042755',
-	"ig_business_id" : '17841401226613021',
 	"caption" : '',
 	"comments_count" : 0,
 	"like_count" : 0,
